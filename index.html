@@ -1,57 +1,219 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BridgeWave</title>
+
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter,Arial,sans-serif;
+}
+
 body{
-background:#071224;
+background:linear-gradient(180deg,#050816,#0b1024);
 color:white;
-font-family:Arial;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:0 24px;
+}
+
+.hero{
+padding:120px 0;
 text-align:center;
-padding:80px;
 }
-.card{
-background:#13203a;
-padding:25px;
-margin:10px;
-border-radius:12px;
+
+.hero h1{
+font-size:72px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+color:#cbd5e1;
+max-width:700px;
+margin:auto;
+line-height:1.6;
+}
+
+.btn{
 display:inline-block;
-width:250px;
-}
-button{
-background:#9333ea;
+margin-top:30px;
+padding:14px 28px;
+background:#8b5cf6;
+border-radius:12px;
+text-decoration:none;
 color:white;
-border:none;
-padding:12px 24px;
+font-weight:bold;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-top:80px;
+}
+
+.stat{
+background:#111827;
+padding:25px;
+border-radius:16px;
+}
+
+.stat h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.features{
+padding:100px 0;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111827;
+padding:30px;
+border-radius:18px;
+}
+
+.card h3{
+margin-bottom:12px;
+}
+
+.roadmap{
+padding:80px 0;
+}
+
+.step{
+background:#111827;
+padding:20px;
+border-left:4px solid #8b5cf6;
+margin-bottom:15px;
 border-radius:10px;
+}
+
+.footer{
+text-align:center;
+padding:50px;
+color:#94a3b8;
 }
 </style>
 </head>
+
 <body>
 
+<div class="container">
+
+<section class="hero">
 <h1>BridgeWave</h1>
 
 <p>
 Seamless asset movement across blockchain networks.
+Monitor transfers, optimize routes, and move liquidity
+efficiently across decentralized ecosystems.
 </p>
 
-<button>Start Transfer</button>
+<a href="#" class="btn">Launch Bridge</a>
 
-<br><br><br>
+<div class="stats">
+
+<div class="stat">
+<h2>$12M</h2>
+<p>Total Volume</p>
+</div>
+
+<div class="stat">
+<h2>48K</h2>
+<p>Transfers</p>
+</div>
+
+<div class="stat">
+<h2>15</h2>
+<p>Supported Networks</p>
+</div>
+
+<div class="stat">
+<h2>99.9%</h2>
+<p>Success Rate</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<h2 class="section-title">Core Features</h2>
+
+<div class="grid">
 
 <div class="card">
 <h3>Cross-Chain Transfers</h3>
-<p>Move assets across supported networks.</p>
+<p>Move assets across supported blockchain networks.</p>
 </div>
 
 <div class="card">
 <h3>Route Optimization</h3>
-<p>Find efficient transfer paths.</p>
+<p>Identify efficient transfer routes and reduce costs.</p>
 </div>
 
 <div class="card">
 <h3>Transfer Analytics</h3>
-<p>Monitor transaction activity.</p>
+<p>Monitor activity and transaction performance.</p>
+</div>
+
+<div class="card">
+<h3>Liquidity Routing</h3>
+<p>Improve asset movement through intelligent routing.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="roadmap">
+
+<h2 class="section-title">Roadmap</h2>
+
+<div class="step">
+Q2 2026 — MVP Launch & Smart Contract Deployment
+</div>
+
+<div class="step">
+Q3 2026 — Transfer Analytics & Route Optimization
+</div>
+
+<div class="step">
+Q4 2026 — Multi-Chain Support & Liquidity Routing
+</div>
+
+<div class="step">
+2027+ — Advanced Bridge Infrastructure
+</div>
+
+</section>
+
+</div>
+
+<div class="footer">
+© 2026 BridgeWave • Built on IOPN
 </div>
 
 </body>
